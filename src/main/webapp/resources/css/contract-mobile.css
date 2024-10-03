@@ -1,0 +1,202 @@
+@media only screen and (max-width: 600px) {
+    /* search label size decrease */
+    .dataTables_filter label {
+        font-size: 0.01rem;
+    }
+        /* search input size change */
+
+    .dataTables_filter input {
+        width: 90% !important;
+        margin: auto !important;
+    }
+    /* action buttons space reduced  */
+    .last-column a+a {
+        margin-left: 10px;
+    }
+    /* action buttons size reduced  */
+    .last-column .btn {
+        padding: 0 8px;
+        height: 27px;
+        line-height: 27px;
+    }
+
+    .last-column .btn i.fa {
+        font-size: 1rem;
+    }
+ 
+    .mdl-cell.mdl-cell--4-col,
+    .mdl-cell.mdl-cell--8-col {
+        width: 42%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+/* heading vertically centered  */
+    .mdl-data-table thead th {
+        vertical-align: inherit;
+    }
+/* border added for table  */
+    .dataTables_scroll {
+        border: 1px solid #ccc;
+    }
+
+    .no-float-small {
+        float: none !important;
+    }
+    .mobile_responsible_table .datepicker~button{
+        position: relative;
+        top: 0 !important;
+        right: 24px;
+    }
+    /* space between form elements reduced  */
+    div.input-field {
+        margin-top: 0.9rem;
+        margin-bottom: 0.9rem;
+    }
+
+    .mobile_full_width {
+        width: 100%;
+    }
+
+    /* adding margin on bottom  */
+    .mb-sm {
+        margin-bottom: 30px !important;
+    }
+
+    /* margins removed on small devices  */
+    .fixed-width {
+        margin: auto !important;
+    }
+
+    /* responsive table styling starts here  */
+    .mobile_responsible_table{
+        overflow: hidden;
+    }
+    /* table heading hide on small screen  */
+    .mobile_responsible_table>thead {
+        display: none;
+    }
+
+    /* bottom border adding to find where the row ends  */
+    .mobile_responsible_table>tbody tr:not(.datepicker-row):not(.mobile_hide_row) {
+        position: relative;
+        border-bottom: 3px solid #2A9D8F;
+    }
+  /* bottom border removing in datepicker  */
+    .datepicker-table>thead tr{
+        border-bottom: none !important;
+    }
+    /* alternate row color change  */
+    .mobile_responsible_table tbody tr:nth-of-type(2n) {
+        background-color: #efefef;
+    }
+
+    /* every table cell showing as rows  */
+    .mobile_responsible_table>tbody tr:not(.datepicker-row) td {
+        display: block;
+        border: 0;
+        width: 55%;
+    }
+
+    /* every table cell geting its name */
+    .mobile_responsible_table>tbody tr:not(.datepicker-row) td::before {
+        content: attr(data-head);
+        width: 100%;
+        display: inline-block;
+        text-align: initial;
+        word-break: break-word;
+        white-space: break-spaces;
+    }
+
+    /*table cell names removed for buttons */
+    .mobile_responsible_table>tbody tr td.mobile_btn_close::before,
+    .mobile_responsible_table>tbody tr td.mobile_btn_add::before {
+        content: '';
+        width: 0;
+        display: none;
+    }
+
+    /* close and add buttons styling on mobile view starts here  */
+    .mobile_responsible_table>tbody tr td.mobile_btn_close,
+    .mobile_responsible_table>tbody tr td.mobile_btn_add {
+        width: 100%;
+    }
+
+    .mobile_responsible_table>tbody tr td.mobile_btn_close a {
+        float: right;
+        margin-right: -25px;
+    }
+
+    .mobile_responsible_table>tbody .mobile_hide_row td:not(.mobile_btn_add) {
+        display: none;
+    }
+
+    /* close and add buttons styling on mobile view ends here  */
+
+    /* additional padding removed */
+    .mdl-data-table td:first-of-type,
+    .mdl-data-table th:first-of-type {
+        padding-left: 18px;
+    }
+
+    /* width changed for searchable dropdown in form tables  */
+    .mobile_responsible_table>tbody tr td .select2-container {
+        width: 105% !important;
+    }
+
+    /* background color changed for searchable dropdown in form tables  */
+    .mobile_responsible_table>tbody tr td .select2-selection.select2-selection--single {
+        background-color: transparent;
+    }
+
+
+    /* date picker styles overwritten with defaults */
+    .mobile_responsible_table .datepicker-table .datepicker-row td {
+        display: table-cell;
+        width: inherit;
+        line-height: 0;
+    }
+
+    .mobile_responsible_table>tbody .datepicker-table td::before{
+        content:'';        
+        display: inline;
+        text-align: center;
+        word-break: break-all;
+        white-space: nowrap;
+    }
+    .mobile_responsible_table>tbody .datepicker-table tr:nth-of-type(2n){
+        background-color: transparent;
+    }
+    /* responsive table styling ends here  */
+    /* .mobile_btn_add {
+        padding: 0 !important;
+        left: -1px;
+        text-align: left !important;
+        top: -39px;
+    } */
+    
+    /* .mobile_hide_row {
+        visibility: collapse;
+    } */
+
+    /* .mobile_add_btn {
+        display: inline-block;
+        border-bottom: none !important;
+        position: absolute !important;
+    }
+
+    .mobile_add_btn td {
+        position: absolute;
+        top: -50px;
+        left: -20px;
+    }
+
+    .mobile_add_btn td::before {
+        content: '' !important;
+        width: 0 !important;
+        display: none !important;
+    }
+
+    .mobile_add_btn td a {
+        position: absolute;
+    } */
+}

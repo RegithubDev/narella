@@ -1,0 +1,71 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:mvc="http://www.springframework.org/schema/mvc"
+ xmlns:task="http://www.springframework.org/schema/task"
+ xsi:schemaLocation="
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+ http://www.springframework.org/schema/mvc 
+ http://www.springframework.org/schema/mvc/spring-mvc.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context-4.0.xsd
+  http://www.springframework.org/schema/task 
+  http://www.springframework.org/schema/task/spring-task-3.0.xsd">
+<mvc:resources mapping="/resources/**" location="/resources/"/>
+<mvc:annotation-driven/>
+<task:annotation-driven />
+<context:component-scan base-package="com.resustainability" />
+<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/resources/**" />
+			<mvc:exclude-mapping path="/views/**" />
+			<mvc:exclude-mapping path="/mobileapp/**" />
+			<mvc:exclude-mapping path="/reone/**" />
+			<mvc:exclude-mapping path="/ajax/**" />
+			
+			<mvc:exclude-mapping path="/reone/getHIMSWList/*" />
+			<bean class="com.resustainability.reisp.login.filer.AuthenticationInterceptor" />
+		</mvc:interceptor>
+	 </mvc:interceptors>
+
+
+	 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		 <property name="prefix">
+		   <value>/views/</value>
+		 </property>
+		 <property name="suffix">
+		    <value>.jsp</value>
+		 </property>
+	 </bean>
+	 
+	 <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:Placeholders.properties</value>
+                <value>classpath:database.properties</value>
+                <value>classpath:cronjobs.properties</value>
+            </list>
+        </property>
+    </bean>
+	 
+	 <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- maxUploadSize=10MB -->
+		<!-- <property name="maxUploadSize" value="10240000"/> -->
+	 </bean>
+	 
+ <!-- Production DB -->
+	 <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+	    	<property name="jndiName" value="java:comp/env/jdbc/${db.environment}"/>
+	 </bean>
+	 
+	 <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>  
+    
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+         <property name="dataSource" ref="dataSource"/>
+     </bean>
+	 
+</beans>

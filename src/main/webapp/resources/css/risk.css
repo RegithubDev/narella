@@ -1,0 +1,287 @@
+body{
+    background-color: #f1f1f1;
+}
+/* card title position adjustment starts*/
+.headbg{
+    margin: -25px -24px 20px -24px;
+}
+.no-mar{
+    margin:0;
+}
+/* card title position adjustment ends*/
+/* background & font  colors of activity buttons  starts */
+  /*.headbg h6,
+.bg-m input,
+.bg-s input{
+   font-weight: bold;
+} */
+.bg-m,.bg-m:hover,.bg-m:focus{
+    /* background-color: #999999 ; */
+    background-color: #577590;
+}
+.bg-s,.bg-s:hover,.bg-s:focus{
+    /* background-color: #e5e5e5 ; */
+    background-color: #43AA8B;
+
+}
+.bg-m *{
+    color: #fff !important;
+    margin:auto;
+}
+.bg-s *,a.bg-s{
+    /* color: #000 !important; */
+    margin: auto;
+}
+/* background & font  colors of activity buttons  ends */
+/* utilities like padding and margin  starts*/
+.container-no-margin .row{
+    margin-bottom: 0;
+}
+.p-2{
+    padding:1rem !important;
+}
+.pt-1{
+    padding-top: .5rem;
+}
+.m-b-5{
+    margin-bottom: 3rem;
+}
+.m-1{
+    margin:.5rem auto;
+}
+.plr-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.l-align{
+    text-align: left;
+}
+.r-align{
+    text-align: right;
+}
+.c-align{
+    text-align: center;
+}
+.primary-text-bold {
+    color: #999999 !important;
+    font-weight: 600
+}
+.input-field .prefix {
+    color: #999;
+}
+.input-field .prefix.active {
+    color: #999999;
+}
+h6.primary-text-bold.center-align {
+    margin: 20px auto;
+}
+.center-align i.btn{
+    width: 100%;
+}
+.dropdown-content li>span{
+    color: #577590 ;
+}
+.primary-text-bold {
+    color: #577590 !important;
+    font-weight: 600
+}
+
+h6.primary-text-bold.center-align {
+    margin: 20px auto;
+}
+.t-c{
+    text-transform: capitalize;
+}
+/* utilities like padding and margin  ends*/
+.b-s{
+    box-shadow: 0px 1px 10px -2px #959595;
+}
+
+td{
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: initial;
+    text-align: left !important;
+}
+td:last-child{
+    word-break:inherit;
+    white-space: inherit;
+}
+.table-inside .mdl-data-table td{
+    text-align: center !important;
+}
+td a+a{
+    margin-left: 5px;
+}
+/* form elements color coding starts  */
+
+input::placeholder{
+    color:#444;
+}
+.mdl-data-table tr.even{
+    background-color: #D6D6D6;
+}
+.mdl-button--raised.mdl-button--colored{
+    background-color: #999999 ;
+    background-color: #577590;
+}
+input[type=password]:not(.browser-default).validate+label,
+input[type=text]:not(.browser-default).validate+label::after,
+input[type=password]:not(.browser-default).validate+label::after,
+input[type=number]:not(.browser-default).validate+label::after,
+input[type=number]:not(.browser-default):focus:not([readonly])+label ,
+input[type=text]:not(.browser-default):focus:not([readonly])+label ,
+textarea.materialize-textarea:focus:not([readonly])+label       {
+    color: #577590  !important;
+}
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly])   {
+    border-bottom: 1px solid #577590 ;
+    box-shadow: 0 1px 0 0 #577590 ;
+}
+
+.mdl-button--raised.mdl-button--colored:hover{
+    /* background-color: #999999 ; */
+    background-color: #577590;
+}
+/* form elements color coding ends  */
+/* data table styling starts  */
+/* .mdl-data-table__cell--non-numeric.mdl-data-table__cell--non-numeric,
+.mdl-data-table td  {
+    text-align: center;
+} */
+.mdl-data-table thead tr,
+.mdl-data-table tfoot tr{
+    background-color: #577590;
+}
+.mdl-data-table thead tr th,
+.mdl-data-table tfoot tr th{
+   color: #fff;
+   font-size: 0.9rem;
+   text-align: center;
+   vertical-align: middle;
+}
+.mdl-data-table thead tr th::before,
+.mdl-data-table tfoot tr th::before,
+.mdl-data-table thead tr th::after,
+.mdl-data-table tfoot tr th::after{
+  top: 15%;
+}
+.mdl-data-table td, .mdl-data-table th{
+    padding-left:10px;
+}
+.mdl-data-table td{
+    padding-right: 10px;
+}
+.mdl-cell--6-col select{
+    width: auto;
+    height: auto;
+    display: inline-block;
+    margin: 0 5px;
+}
+/* data table styling ends  */
+/* search input code starts*/
+.dataTables_filter input[type="search"]::placeholder {
+    color: #6C587B;
+}
+
+.dataTables_filter label::after {
+    position: relative;
+    content: '\f002';
+    color: #6C587B;
+    right: 15px;
+    font: normal normal normal 14px/1 FontAwesome;
+}
+
+.dataTables_filter label {
+    color: #fff;
+}
+/* search input code ends*/
+
+/* input form specials code  starts*/
+.input-field>label,
+.input-field textarea::placeholder,
+.input-field input[type="text"]::placeholder {
+    color: #000000;
+}
+
+.input-field textarea {
+    height: 65px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.character-counter {
+    position: absolute;
+    right: 14px;
+    bottom: 13px;
+}
+
+.input-field>textarea+label {
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #fff;
+    width: auto !important;
+}
+/* input form specials code  ends*/
+
+/* responsiveness code starts  */
+.input-field textarea>label:not(.label-icon).active {
+    transform: translateY(-10px) scale(0.8);
+}
+
+@media only screen and (max-width: 768px) {
+    .l-align,
+    .r-align{
+        text-align: center;
+    }
+    .l-align .btn,
+    .r-align .btn,
+    .c-align .btn{
+        width: 100%;
+    }
+
+  }
+  /* responsiveness code ends  */
+/* datepicker calender icon styling starts  */
+.datepicker~button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    background-color: transparent;
+}
+.datepicker~button:focus {
+    background-color: transparent;
+}
+/* datepicker calender icon styling ends  */
+/* units styling starts */
+input[type="text"]~.units{
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    border: 0;
+    opacity: 0.7;
+}
+/* units styling ends */
+.page-loader ,.page-loader-2{
+    background: #332e2ec2!important;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.preloader-wrapper{
+    top: 45%!important;
+    left:47%!important;
+}

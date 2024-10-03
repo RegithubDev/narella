@@ -1,0 +1,204 @@
+
+@media only screen and (max-width: 600px) {
+
+/* file upload styling starts */
+.file-field .btn {
+float: none;
+display: block;
+border-radius: 25px;
+text-transform: capitalize;
+font-size: 1.1rem;
+}
+
+.file-field .file-path-wrapper {
+height: 35px;
+}
+
+input[type=text]:not(.browser-default).file-path.validate {
+border-bottom: 0;
+box-shadow: none;
+}
+
+/* file upload styling ends */
+
+.select-wrapper input.select-dropdown:disabled {
+border-bottom: 0;
+}
+
+/* card ,header and error styling starts */
+.card .card-content {
+padding: 24px 1px;
+background-color: #ececec;
+}
+
+.headbg {
+margin: -25px -1px 20px;
+}
+
+.input-field {
+margin-top: 0.40rem;
+margin-bottom: 0.40rem;
+}
+
+.error {
+color: red;
+padding-left: inherit;
+}
+
+/* card ,header and error styling ends */
+/* datepicker and select wrapper styling starts */
+.datepicker+button {
+position: absolute;
+right: 12px;
+top: 14px;
+border: 0;
+opacity: 0.7;
+cursor: pointer;
+background-color: transparent;
+}
+
+/* .select-wrapper {
+box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2), -3px -3px 2px 0 rgba(0, 0, 0, .1), 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+padding-left: 11px;
+padding-right: 11px;
+border-radius: 20px;
+background-color: #fff;
+} */
+
+/* datepicker and select wrapper styling ends */
+
+/* text area and text input styling starts */
+.input-field>input[type='text'] {
+box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2), -3px -3px 2px 0 rgba(0, 0, 0, .1), 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+/* background-color: #fff; */
+}
+
+.input-field>input[type='text']+label {
+padding-left: 11px;
+}
+
+.input-field textarea {
+/* background-color: #fff; */
+box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .1), 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+}
+
+.input-field>label:not(.label-icon).active {
+/* -webkit-transform: translateY(-8px) scale(0.8);
+transform: translateY(-8px) scale(0.8); */
+
+}
+
+/* text area and text input styling ends */
+
+input.datepicker::placeholder {
+font-size: small;
+padding-left: 10px;
+}
+
+.btn.waves-effect.waves-light {
+font-weight: 500;
+}
+
+.btn.waves-effect.waves-light .fa {
+font-size: 1rem;
+}
+/* select dropdown & datepicker label styling start */
+.select-wrapper+label {
+    margin-left: 10px;
+    /* margin-top: 4px; */
+    padding: 0 2px;
+    /* background-color: #ececec; */
+    width: auto !important;
+}
+
+.input-field>input[type=text]:not(.browser-default) {
+    box-sizing: border-box;
+    padding: 0 11px;
+}
+
+.datepicker~label:not(.label-icon) {
+    margin-left: 10px;
+}
+
+.input-field>.datepicker~label:not(.label-icon).active {
+    /* background-color: #ececec; */
+
+}
+/* select dropdown & datepicker label styling ends */
+
+/* date picker style override to  default style */
+.datepicker-calendar .select-wrapper ,
+.datepicker-calendar input[type='text'] {
+    box-shadow: none !important;
+    border-radius: none;
+}
+
+
+/* extra code starts here  */
+.card {
+    border: 0.5px solid #999999cc;
+}
+
+.card .card-content {
+    /* background-color: #fff; */
+    background-color: #EBECF0;
+}
+
+/* .input-field>input[type='text'],
+.input-field .select-wrapper { */
+.input-field input[type='text'],
+.input-field textarea {
+    /* margin-right: 8px; */
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    padding: 0 11px;
+}
+
+.input-field>input[type='text']:focus,
+.input-field textarea:focus {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF !important;
+}
+
+input.valid[type=text]:not(.browser-default),
+.input-field textarea.valid {
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF !important;
+}
+
+.input-field>textarea+label {
+    background-color: transparent;
+}
+
+.file-field .btn.bg-m,
+.btn.waves-effect.bg-m {
+    color: #000;
+    font-weight: bold;
+    box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #ccc;
+}
+
+.file-field .btn.bg-m span,
+.file-field .btn.bg-m span .fa,
+.btn.waves-effect.bg-m .fa {
+    color: #000 !important;
+}
+
+.file-field .btn.bg-m:hover,
+.btn.waves-effect.bg-m:hover {
+    box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+
+.file-field .btn.bg-m:active,
+.btn.waves-effect.bg-m:active {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+}

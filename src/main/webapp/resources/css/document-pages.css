@@ -1,0 +1,297 @@
+.center-align.p-2.bg-m h5 {
+    font-size: 20px;
+}
+
+.t-t-i {
+    text-transform: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.file-upload-btn {
+    width: 100%;
+    border-radius: 40px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.modal-header {
+    text-align: center;
+    background-color: #2E58AD;
+    color: #fff;
+    margin: -24px -24px 20px !important;
+    padding: 1rem;
+}
+
+.preview-modal {
+    max-height: 80%;
+    min-height: 60%;
+}
+
+.main-card>.card-content {
+    min-height: 85vh;
+}
+
+/* change icon & bg based on the active state starts */
+
+/* li.active>.collapsible-header{
+    background-color:#DAE8F9;
+}
+li.active>.collapsible-body{
+    background-color:#ECF8FD;
+}
+.collapsible-header>.close {
+    display: none;
+}
+
+.collapsible-header>.open {
+    display: inline-block;
+}
+
+.active>.collapsible-header .open {
+    display: none;
+}
+
+.active>.collapsible-header .close {
+    display: inline-block;
+} */
+
+/* change icon & bg based on the active state ends  */
+
+.input-field .searchable_label {
+    font-size: 0.85rem;
+    margin-bottom: 6px !important;
+}
+
+.select2-container.select2-container--default.select2-container--open {
+    z-index: 1034;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+}
+
+.modal .input-field p {
+    margin: 0;
+}
+
+.modal .container .row {
+    margin-bottom: 0;
+}
+
+/* .file-field .btn span{
+    font-weight: 400;
+}
+.card-action.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 24px;
+}
+
+.card-action.flex a {
+    margin-right: 0 !important;
+    font-size: 2rem;
+    cursor:pointer;
+    color:#2E58AD !important;
+} */
+
+.card .card-title {
+    font-size: 1.2rem;
+}
+
+/*
+.collapsible-body .row {
+    margin-bottom: 0;
+}
+
+.collapsible-body .card-content img {
+    width: 100px;
+    height: 100px;
+}
+
+.collapsible-body .card-file {
+    width: 230px;
+}
+
+.card-file .card-title,
+.card-file .card-content .card-title,
+.collapsible-body .card-content .card-title {
+    margin-bottom: 0;
+}
+
+.files-collection {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.files-collection .card-file{
+    margin:6px;
+} */
+
+.input-field .prefix.right-side {
+    right: 10px;
+}
+
+.input-field .prefix.right-side~label, .input-field .prefix.right-side~input {
+    margin-left: 0;
+    width: 100%;
+}
+
+.input-field .prefix.right-side~input {
+    background-color: #fafafa;
+    width: calc(100% - 25px);
+    border-radius: 20px;
+    padding-left: 25px;
+}
+
+.error-msg label {
+    color: red!important;
+}
+
+.bordered th, td {
+    text-align: center !important;
+    /*padding:5px;
+			border:1px solid #ccc; */
+}
+
+.bordered td:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.bordered th:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.bordered tbody td:last-child, .bordered tbody td:first-child, .bordered thead th:last-child, .bordered thead th:first-child {
+    padding: 5px 10px;
+    text-align: center !important;
+}
+
+.bordered tr {
+    border: 1px solid #ccc;
+}
+
+.files-filter {
+    box-shadow: 0 0 4px 0 #999;
+}
+
+.w-8p {
+    width: 8%;
+}
+
+.w-8p.last-column {
+    width: 8%;
+}
+
+.title-text, th.title-text {
+    text-align: left!important;
+    padding-left: 10px!important;
+}
+
+@media screen and (min-width:1024px) {
+    .bordered tbody td:last-child a+a {
+        margin-left: 10px;
+    }
+    .w-8p.last-column {
+        width: 15%;
+    }
+}
+
+/* folders and its styling starts here  */
+
+.folder-header {
+    display: flex;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.folder-header i {
+    width: 2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+.folder-body {
+    padding: 1.5rem;
+    background-color: #fafafa;
+}
+
+.d-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    padding-bottom: 10px;
+}
+
+.files-filter {
+    box-shadow: 0 0 4px 0 #999;
+    width: 48%;
+    margin: 1%;
+    float: left;
+}
+
+div.folder-header {
+    margin-top: 0;
+}
+
+/* folders and its styling ends here  */
+
+/* responsive code starts here  */
+
+@media screen and (max-width:768px) {
+    .input-field .prefix.right-side {
+        right: 15px;
+    }
+    .mob-pad-reduce {
+        padding: 0 12px;
+    }
+    .modal {
+        width: 85%;
+    }
+    .modal .modal-content {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+    .modal-header {
+        margin: -24px -12px 20px!important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .modal-content>.container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .files-collection {
+        justify-content: center;
+    }
+    .collapsible-body .card-file {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .input-field .prefix.right-side~input {
+        padding-left: 15px;
+        width: calc(100% - 15px);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .files-filter {
+        width: 98%;
+    }
+}
+
+/* responsive code ends here  */

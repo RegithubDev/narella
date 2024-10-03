@@ -1,0 +1,98 @@
+.input-field .searchable_label {
+    font-size: 0.85rem;
+}
+
+.searchable_label {
+    margin-bottom: 0;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+}
+
+.select2-container.select2-container--default.select2-container--open {
+    z-index: 1073;
+}
+
+p a {
+    color: blue;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+div.p-2 {
+    padding: .5rem !important;
+}
+
+div.m-b-5 {
+    margin-bottom: 1rem;
+}
+
+thead tr th{
+    text-transform:capitalize;
+    white-space: break-spaces;
+}
+
+.mdl-data-table td, .mdl-data-table th {
+    padding: 3px 6px;
+    padding: 0 6px;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    margin-top: -.5rem;
+}
+
+div.mdl-cell.mdl-cell--6-col:not(:empty) {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: center;
+}
+
+div.dataTables_filter label input[type="search"].form-control {
+    margin-bottom: 0;
+}
+
+.mdl-data-table tbody tr, .mdl-data-table tbody tr td {
+    height: 2.5rem;
+}
+
+.btn {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    font-size: .97rem;
+    height: 1.7rem;
+    line-height: 1.75rem;
+    padding: 0 .5rem;
+    font-size: .97rem;
+}
+
+.btn i {
+    vertical-align: bottom;
+    font-size: 1.2rem;
+    font-size: .9rem;
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.mdl-cell.mdl-cell--6-col:empty {
+    margin: 0;
+}
+
+@media only screen and (max-width: 450px) {
+    .dataTables_filter input[type="search"], div.dataTables_wrapper div.dataTables_filter input[type="search"] {
+        width: 90% !important;
+    }
+}
+
+.error-msg label {
+    color: red!important;
+}

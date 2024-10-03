@@ -1,0 +1,423 @@
+body{
+    background-color: #555;
+}
+/* card related color styling starts*/
+.card{
+    background-color: #444;
+}
+/* dashboard card styling starts  */
+.card-title:not(.headbg) h6,
+.card-title:not(.headbg) h4{
+    color:#eee;
+}
+.card-content h5,
+.card-content h5 span:not(.div-header),
+.card-content h6,
+.card-content p{
+    color:#ffffff;
+}
+.card-content h5 .div-header{
+    color:rgba(0,0,0,.87);
+}
+input[type="number"]~.units {
+    color: #dcdcdc;
+}
+input[type="month"] {
+    color: #fff !important;
+}
+input[type="month"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+#zonal_railway_table td input[type="month"]{
+    padding-bottom: 1rem;
+}
+.card.main-clr{
+    background-color:#444;
+}
+.card.main-clr .line{
+    border-bottom: 1px solid #555;
+}
+.card.main-clr.active .line,
+.card.sec-clr .line{
+    border-bottom: 1px solid #ccc;
+    transition: border 0.3s ease-in-out;
+    -webkit-transition: border 0.3s ease-in-out;
+}
+.card.main-clr .card-content .card-title{
+    color:#fff;
+}
+/* .card.main-clr.active .card-content p,
+.card.sec-clr .card-content p{
+    color:#333;
+} */
+.card.main-clr.active .card-content .card-title{
+    color:#333;
+}
+/* dashboard card styling ends  */
+
+/* card related color styling ends */
+
+/* diamonds related styling starts here  */
+.diamond { background: #888 !important;
+}
+.diamond:before {
+    border-right-color: #888;
+}
+.diamond:after {
+    border-left-color: #888;
+}
+.diamond:hover {
+    background: rgba(136, 136, 136, 0.8);
+  }
+  .diamond:hover:before {
+    border-right-color: rgba(136, 136, 136, 0.8);
+  }
+  .diamond:hover:after {
+    border-left-color: rgba(136, 136, 136, 0.8);
+  }
+  .diamond span {
+    text-shadow: 0 0 2px black;
+}
+/* diamonds related styling ends here  */
+/* data table  */
+.mdl-data-table{
+    /* background-color: #999; */
+    background-color: #777;
+}
+.right-btns .fa{
+    color:#fff;
+}
+#dotgroup1 .dotgroup-scroll{
+    background-color: #ddd;
+}
+/* search bar on grid starts */
+.dataTables_filter label{
+    color:#444 !important;
+}
+.mdl-data-table td a{
+    color:blue;
+    text-shadow: 0px 0px #222;
+}
+/* search bar on grid ends */
+/* data table realated color changes starts  */
+.dataTables_filter label::after,
+.dataTables_filter .form-control,
+.dataTables_filter .form-control::placeholder{
+    color:#ffffff !important;
+}
+/* data table length */
+.dataTables_length .form-control{
+    background-color: #444 !important;
+    border-color: #555 ;
+    color:#ffffff ;
+}
+.dataTables_length .form-control option, .dataTables_length label{
+    color:#ffffff;
+}
+.dataTables_filter label input[type="search"]::placeholder{
+    color:#eee !important;
+}
+/* data table body  */
+.mdl-data-table.table-add{
+    background-color: transparent !important;
+}
+.mdl-data-table:not(.table-add) tbody tr:hover {
+    background-color: #aaa;
+}
+.mdl-data-table .datepicker-table-wrapper tbody tr:hover {
+    background-color: transparent;
+}
+.mdl-data-table .datepicker-table-wrapper tbody td:hover {
+    background-color: #aaa;
+}
+.mdl-data-table thead tr th,
+.mdl-data-table tfoot tr th {
+    color:#ddd !important;
+}
+.mdl-data-table tbody tr.even {
+    background-color: #aaa;
+}
+.files-filter .folder-body {
+    background-color: #ddd;
+}
+.files-filter .folder-body td >a {
+    /* text-shadow: 0px 0px 0.5rem #fff; */
+    -webkit-filter: drop-shadow(0 0 3px #fff);
+    /* filter: url(#drop-shadow); */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#fff')";
+}
+/* data table information & pagination  */
+.dataTables_info {
+    color:#ffffff;
+}
+.dataTables_paginate .mdl-button{
+    color:#ffffff !important;
+}
+.mdl-button--raised.mdl-button--colored:hover,
+.mdl-button--raised.mdl-button--colored{
+    color:#ddd !important;
+}
+/* data table realated color changes ends  */
+
+/* restrict mobile vversion width to viewwidth  */
+.hiddendiv.common{
+    width:99vw !important;
+}
+/* activity table color  */
+.activity-table tr{
+    border-color: #ffffff;
+}
+.activity-table tr td:not(:last-child) {
+    border-color:#ffffff;
+    color: #ffffff;
+}
+/* activity form colors  */
+#issueCategoryId {
+    background-color: #444;
+    color: #ffffff;
+    border-color: #ccc;
+    border-radius: 5px;
+}
+.activity-form .input-field>textarea+label,
+.activity-form .input-field>input[type="text"]+label,
+.activity-form  .input-field input[type="number"]+label {
+    background-color: #444;
+}
+
+[type="radio"].with-gap:checked + span::before,
+[type="radio"]:not(:checked)+span:before {
+    border: 2px solid #ccc;
+}
+.activity-form .input-field>input[type="text"],
+.activity-form input[type="text"].datepicker+label{
+    color:#ffffff;
+}
+.datepicker-calendar-container{
+    background-color: #efefef;
+}
+/* input fields color change starts*/
+.select-wrapper:not(.select-month):not(.select-year) input.select-dropdown,
+.input-field .datepicker ,
+.input-field .datepicker::placeholder,
+.input-field label{
+    color:#ccc;
+}
+
+.input-field input[type=password]:not(.browser-default).validate+label,
+.input-field input[type=number]:not(.browser-default).validate+label{
+    color: #ccc !important;
+}
+/* .input-field input[type=password]:not(.browser-default),
+.input-field input[type=number]:not(.browser-default),
+.input-field input[type=text]:not(.browser-default){
+
+} */
+input:not([type]),
+input[type=text]:not(.browser-default):not(.dropdown-trigger),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea ,
+textarea.pmis-textarea {
+    font-size: 1rem;
+    color: #ffffff !important;
+}
+.input-field input[type=text][placeholder="Search ..."].autocomplete{
+    background-color:#666;
+}
+
+.input-field .materialize-textarea,
+.input-field .character-counter{
+    color:#ffffff;
+}
+.input-field .prefix {
+    color: #ccc;
+}
+
+.file-field .btn:not(.bg-m):not(.bg-s) {
+    color: #000 !important;
+    background-color: #ccc;
+}
+/* .file-field .btn span{
+    color: #000 !important;
+} */
+.file-field .file-path{
+    color: #ffffff;
+}
+.select-wrapper .caret {
+    fill:#ffffff;
+}
+/* input fields color change ends*/
+
+/* dropdown content and notification color  */
+.dropdown-content {
+    background-color: #bbb;
+}
+.notification_body {
+    background-color: #f56661;
+}
+/* text & btn color  */
+.text-primary{
+    color: #ffffff;
+}
+.text-primary a:not(.btn){
+    color: blue;
+}
+.btn {
+    color:#ffffff !important;
+}
+.btn.black-text {
+    color:#000 !important;
+}
+/* form table color  */
+.form-table td{
+    color: #ffffff;
+}
+.form-table input[type=text]:not(.browser-default){
+    border-bottom-color:#ffffff ;
+}
+.form-table .select-wrapper .select-dropdown{
+    color:#ffffff;
+}
+.form-table .select-wrapper .caret{
+    fill:#ffffff;
+}
+.form-table input[type=text]:not(.browser-default):disabled{
+    border-bottom-color:#777 ;
+}
+.form-table .select-wrapper .select-dropdown:disabled{
+    color:#777;
+}
+.form-table .select-wrapper.disabled .caret{
+    fill:#777;
+}
+
+/* searchable label styling  */
+.input-field .searchable_label{
+    color:#ccc !important;
+}
+.select-dropdown.dropdown-content li.selected {
+    background-color: rgba(0,0,0,0.1);
+}
+/* modal related styling  */
+.modal .modal-content{
+    background-color: #666;
+}
+/* radio btn related styling  */
+[type="checkbox"]+span:not(.lever):before,
+[type="checkbox"]:not(.filled-in)+span:not(.lever):after{
+    border-color: #ddd;
+}
+
+/* searchable select color  */
+.select2-container--default .select2-selection--single{
+    background-color: transparent;;
+}
+.select2-container--default .select2-selection--multiple {
+    background-color: #666;
+}
+.select2-container--default:not(.select2-container--disabled) .select2-selection--single .select2-selection__rendered {
+    color: #eee;
+}
+/* dropdown bg color  */
+.select2-container--open .select2-dropdown--below ,
+.select2-container--open .select2-dropdown--above {
+    background-color: grey;
+    color:#ddd;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    color: #eee;
+}
+/* dropdown or drop up arrow color  */
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border-color:#ddd transparent !important;
+}
+/* selected option on searchabe select  */
+.select2-container--default .select2-results__option--selected {
+    background-color: #bbb;
+    color: #555;
+}
+
+/* table submit button fullwidth  */
+.center-align.m-1 button.bg-m,
+.center-align.m-1 button.bg-s{
+    width:100%;
+}
+/* risk form color code starts  */
+.riskform .input-field>textarea+label {
+    background-color: #444;
+}
+.riskform .input-field>.datepicker ~ label:not(.label-icon).active,
+.riskform .input-field>textarea ~ label:not(.label-icon).active {
+    -webkit-transform: translateY(-11px) scale(0.8);
+    transform: translateY(-11px);
+}
+/* risk form color code ends  */
+/* date border bottom code start  */
+input[type=text]:not(.browser-default)[readonly="readonly"]{
+    border-bottom-style: solid !important;
+    border-bottom-color: #ffffff ;
+    color:#fff;
+}
+input[type=text]:not(.browser-default)[readonly="readonly"]::placeholder{
+    color:#ffffff;
+}
+/* date border bottom code ends  */
+       /* datepicker calender icon code starts  */
+       .datepicker~button {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        border: 0;
+        opacity: 0.7;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .datepicker~button:focus {
+        background-color: transparent;
+    }
+    .datepicker~button .fa{
+        color:#fff;
+    }
+    label[for='reportingDate']{
+        left:25px !important;
+    }
+    /* datepicker calender icon code ends  */
+
+/* all input labels white after focus  */
+input[type=number]:not(.browser-default):focus:not([readonly])+label ,
+input[type=text]:not(.browser-default):focus:not([readonly])+label ,
+textarea.materialize-textarea:focus:not([readonly])+label{
+    color: #ffffff !important;
+}
+
+/* datepicker label on focus  */
+.input-field>.datepicker ~ label:not(.label-icon).active {
+    -webkit-transform: translateY(-11px) scale(0.8);
+    transform: translateY(-11px) scale(0.8);
+    /* background-color:#444; */
+    padding:2px
+}
+.select2-results__option{
+    color:#ddd;
+}
+
+/* profile page dark theme code start here  */
+    .profile_name{
+        color:#eee;
+    }
+    .profile_designation{
+        color:#ccc;
+    }
+    .profile_info td{
+        color:#bbb;
+    }

@@ -1,0 +1,64 @@
+/* form table styling starts */
+    .form-table tbody>tr:not(.datepicker-row)>td,
+    .form-table tr:not(.datepicker-row)>th {
+      border: 1px solid #bcbcbc;
+    }
+
+    .form-table tr:not(.datepicker-row)>td {
+      padding: 0px 5px;
+      text-align: center;
+      width: 50%;
+    }
+
+    .form-table tr:not(.datepicker-row)>th {
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .form-table .select-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+    .datepicker::placeholder {
+      color: #333;
+      font-size: 1rem;
+    }
+
+.form-table .datepicker-table thead tr>th{
+  border:0;
+}
+/* form table styling ends */
+
+/* modal related css starts */
+.modal-title {
+  margin-top: -24px;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.modal.fs {
+      width: 55%;
+      height: 85%;
+      max-height: 85%;
+  }
+
+  .modal.fs .input-filed label {
+      font-weight: bold;
+  }
+
+  .no-mar {
+      margin-bottom: 0;
+  }
+
+  @media only screen and (max-width: 992px) {
+      .modal.fs {
+          width: 90%;
+      }
+
+      .modal.fs .row {
+          margin-bottom: 0;
+      }
+  }
+    /* modal related css ends */

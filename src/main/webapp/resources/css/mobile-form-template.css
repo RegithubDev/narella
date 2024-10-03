@@ -1,0 +1,207 @@
+/* @media only screen and (max-width: 600px){ */
+
+.input-field .searchable_label {
+    font-size: .9rem;
+}
+
+.row.no-mar {
+    margin-bottom: 0;
+}
+
+.card {
+    background-color: transparent;
+}
+
+/* glass effect for all inputs starts */
+
+.input-field input[type='text']:not(.dropdown-trigger),
+.input-field input[type='number'], .input-field textarea,
+.select2-container--default .select2-selection--single {
+    box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF !important;
+    height: 40px;
+    width: -webkit-fill-available;
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff !important;
+    background-color: transparent;
+    padding: 5px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color: #fefefe;
+    box-shadow: 0 0 1px 1px #ccc;
+}
+
+.select2-search.select2-search--inline > input[type=search]:focus:not(.browser-default){
+    background-color: transparent;
+}
+/* glass effect for all inputs ends */
+
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 40px !important;
+    line-height: 40px;
+}
+
+/*  .card-content .input-field>.datepicker{
+        margin-top:10px;
+    }*/
+
+.input-field>.datepicker~label {
+    /* line-height:38px; */
+    padding-left: 10px;
+}
+
+.input-field>.datepicker~label:not(.label-icon).active {
+    background-color: transparent;
+    line-height: 20px;
+    padding-left: 0;
+}
+
+/* datepicker cusomization  */
+
+.datepicker-date-display {
+    text-align: center;
+}
+
+/* datelike and datelike1 classes styling  */
+
+.input-field>.datelike {
+    margin-top: 10px !important;
+}
+
+.input-field>.datelike1 {
+    margin-top: 13px !important;
+}
+
+.input-field>textarea.datelike {
+    margin-top: 12px !important;
+}
+
+/* added padding for labels without active states */
+
+.input-field>textarea~label, .input-field>.datelike~label .input-field>.datelike1~label, .input-field>input[type="number"]~label:not(.active), .input-field>input[type="text"]:not(.datelike):not(.datelike1):not(.datepicker)~label:not(.active) {
+    padding-left: 10px;
+}
+
+.input-field>textarea~label:not(.label-icon).active, .input-field>.datelike~label:not(.label-icon).active, .input-field>.datelike1~label:not(.label-icon).active {
+    background-color: transparent;
+    padding-left: 0;
+}
+
+.input-field>.datelike~label {
+    line-height: 44px;
+    padding-left: 10px;
+}
+
+.input-field>textarea.datelike~label, .input-field>.datelike1~label {
+    line-height: 42px;
+    padding-left: 10px;
+}
+
+textarea.datelike {
+    height: 40px !important;
+}
+
+.input-field>.datelike~label:not(.label-icon).active, .input-field>input[type='text']~label:not(.label-icon).active {
+    line-height: 20px;
+    -webkit-transform: translateY(-11px) scale(0.95);
+    transform: translateY(-11px) scale(0.95);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding-bottom: 3.5rem;
+    }
+}
+
+/* mobile related styling ends here  */
+
+/* } */
+
+@media only screen and (max-width: 820px) {
+    /* padding reduced on mobile devices  */
+    .card .card-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .headbg {
+        margin: -25px -12px 20px -12px;
+    }
+    /* table datepicker , select2 dropdown , table column and update , cancel buttons styling for mobile versions */
+    .mobile_responsible_table tbody tr .input-field .datepicker~button {
+        position: relative;
+        top: 0;
+        right: 26px;
+    }
+    .mobile_responsible_table tbody tr td .select2-container {
+        width: 100% !important;
+    }
+    .mobile_responsible_table>tbody>tr:not(.datepicker-row)>td::before {
+        vertical-align: middle;
+    }
+    .mobile_responsible_table tbody {
+        overflow-x: hidden;
+    }
+    /* btns styling for mobile versions */
+    .mt-brdr {
+        margin-top: auto !important;
+        border: none !important;
+    }
+    .mt-brdr .btn {
+        width: 100% !important;
+    }
+    /* input fields styles for mobile version  */
+    div.input-field {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .input-field p.searchable_label {
+        margin-top: -20px !important;
+        margin-bottom: -4px;
+    }
+    .input-field>.datelike~label:not(.label-icon).active, .input-field>input[type='text']:not(.datepicker)~label:not(.label-icon).active, .input-field>label:not(.label-icon).active {
+        -webkit-transform: translateY(-18px) scale(0.95) !important;
+        transform: translateY(-18px) scale(0.95) !important;
+    }
+    .col.input-field>textarea+label:not(.label-icon).active {
+        margin-top: 0;
+    }
+    /* responsive font sizes  */
+    .fs-sm-67rem {
+        font-size: .67rem !important;
+    }
+    .fs-sm-8rem {
+        font-size: .8rem !important;
+    }
+    .input-field>.datepicker~button {
+        top: 10px;
+        right: 10px;
+    }
+    /* amount type text fields margin changes on mobile view  */
+    .input-field .prefix {
+        width: 2rem;
+    }
+    .input-field .prefix~input, .input-field .prefix~textarea, .input-field .prefix~label, .input-field .prefix~.validate~label, .input-field .prefix~.helper-text, .input-field .prefix~.autocomplete-content {
+        margin-left: 2rem;
+    }
+    .input-field .prefix~label, .input-field .prefix~.validate~label {
+        margin-left: 2.25rem
+    }
+    .input-field .prefix~.validate~label.active {
+        margin-left: 2rem
+    }
+    .input-field.col .prefix~label, .input-field.col .prefix~.validate~label {
+        width: calc(100% - 3rem);
+    }
+    .file-path-wrapper .file-path, .file-field .file-path-wrapper>input.file-path {
+        box-shadow: none !important;
+    }
+    .mob-center {
+        text-align: center;
+    }
+}

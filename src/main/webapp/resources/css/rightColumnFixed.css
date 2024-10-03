@@ -1,0 +1,19 @@
+ 	.mdl-data-table thead tr th {
+ 		background-color: #007A7A;
+ 	}
+
+ 	td.dtfc-fixed-left, th.dtfc-fixed-left {
+ 		position: relative !important;
+ 	}
+
+ 	tbody tr.odd td.dtfc-fixed-right {
+ 		background: #fff;
+ 	}
+
+ 	tbody tr.even td.dtfc-fixed-right {
+ 		background-color: lightcyan;
+ 	}
+
+ 	tbody tr.odd td.dtfc-fixed-right:hover, tbody tr.even td.dtfc-fixed-right:hover, tbody tr.odd:hover td.dtfc-fixed-right, tbody tr.even:hover td.dtfc-fixed-right {
+ 		background-color: #eee
+ 	}

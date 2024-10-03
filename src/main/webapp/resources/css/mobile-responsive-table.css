@@ -1,0 +1,160 @@
+@media only screen and (max-width: 820px) {
+ /* responsive table styling starts here  */
+    .mobile_responsible_table{
+        overflow: hidden;
+    }
+    /* table heading hide on small screen  */
+    .mobile_responsible_table>thead {
+        display: none;
+    }
+
+    /* bottom border adding to find where the row ends  */
+    .mobile_responsible_table>tbody> tr:not(.datepicker-row):not(.mobile_hide_row) {
+        position: relative;
+        border-bottom: 3px solid #2E58AD;
+        border-bottom: 3px solid #007A7A;
+    }
+  /* bottom border removing in datepicker  */
+    .datepicker-table>thead tr{
+        border-bottom: none !important;
+    }
+    /* alternate row color change  */
+    .mobile_responsible_table tbody tr:nth-of-type(2n) {
+        background-color: #f8f8f8;
+    }
+
+    /* every table cell showing as rows  */
+    .mobile_responsible_table>tbody > tr:not(.datepicker-row) >td {
+        display: block;
+        border: 0;
+        width: 55%;
+        white-space: inherit;
+    }
+    .mobile_responsible_table>tbody >tr:not(.datepicker-row)> td> div:not(.modal) {
+        display: inline-block;
+        text-align: initial;
+        white-space: break-spaces;
+    }
+
+    /* every table cell geting its name */
+    .mobile_responsible_table>tbody >tr:not(.datepicker-row) >td::before {
+        content: attr(data-head);
+        width: 100%;
+        display: inline-block;
+        text-align: initial;
+        word-break: break-word;
+        white-space: break-spaces;
+        vertical-align: top;
+    }
+
+    /*table cell names removed for buttons */
+    .mobile_responsible_table>tbody tr td.mobile_btn_close::before,
+    .mobile_responsible_table>tbody tr td.mobile_btn_add::before {
+        content: '';
+        width: 0;
+        display: none;
+    }
+
+    /* close and add buttons styling on mobile view starts here  */
+    .mobile_responsible_table>tbody tr td.mobile_btn_close,
+    .mobile_responsible_table>tbody tr td.mobile_btn_add {
+        width: 100%;
+    }
+
+    .mobile_responsible_table>tbody tr td.mobile_btn_close a {
+        float: right;
+        margin-right: -25px;
+    }
+
+    .mobile_responsible_table>tbody .mobile_hide_row td:not(.mobile_btn_add) {
+        display: none;
+    }
+
+    /* close and add buttons styling on mobile view ends here  */
+
+    /* additional padding removed */
+    .mdl-data-table td:first-of-type,
+    .mdl-data-table th:first-of-type {
+        padding-left: 18px;
+    }
+
+    /* width changed for searchable dropdown in form tables  */
+    /* .mobile_responsible_table>tbody tr td .select2-container {
+        width: 105% !important;
+    } */
+
+    /* background color changed for searchable dropdown in form tables  */
+    .mobile_responsible_table>tbody tr td .select2-selection.select2-selection--single {
+        background-color: transparent;
+    }
+
+
+    /* date picker styles overwritten with defaults */
+    .mobile_responsible_table .datepicker-table .datepicker-row td {
+        display: table-cell;
+        width: inherit;
+        line-height: 0;
+    }
+
+    .mobile_responsible_table>tbody .datepicker-table td::before{
+        content:'';
+        display: inline;
+        text-align: center;
+        word-break: break-all;
+        white-space: nowrap;
+    }
+    .mobile_responsible_table>tbody .datepicker-table tr:nth-of-type(2n){
+        background-color: transparent;
+    }
+
+    /* attachment in table styling starts here  */
+    .cell-disp-inb,
+    .cell-disp-inb .input-field{
+        margin:0
+    }
+    .cell-disp-inb > div:not(.file-field),
+    .cell-disp-inb span{
+        display:inline-block !important;
+        white-space:inherit !important;
+    }
+    /* .cell-disp-inb .file-path-wrapper{
+        visibility:hidden;
+        width: 2px;
+        margin-bottom: 0;
+    } */
+    .cell-disp-inb > div.disp-in{
+        display:inline !important;
+    }
+    .cell-disp-inb .filevalue {
+        width: 200%;
+        white-space: break-spaces;
+    }
+    /* mobile responsible table attachment changes  */
+    .mobile_responsible_table>tbody >tr:not(.datepicker-row)> td> div.btn{
+        float:none;
+        position:relative;
+    }
+    td.cell-disp-inb .file-path-wrapper {
+        visibility: visible;
+        width: 200%;
+        display: block !important;
+    }
+	/* attachment in table styling ends here  */
+
+    /* responsive table styling ends here  */
+}
+@media only screen and (device-width: 820px){
+    .cell-disp-inb .filevalue {
+        width: 190%;
+    }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 500px) {
+    .mobile_responsible_table .input-field input[type='text']:not(.dropdown-trigger),
+    .mobile_responsible_table .input-field input[type='number'],
+    .mobile_responsible_table .input-field textarea,
+    /* .select2-container--default .select2-selection--single{ */
+    .select2-container--default{
+        width: 90%;
+    }
+}

@@ -1,0 +1,89 @@
+/* width of searchale dropdown fixed to 100% */
+.input-field .select2-container--default {
+    width: 100% !important;
+}
+/* make label for searchable dropdown  */
+.input-field .searchable_label {
+    position: relative;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top:-10px !important;
+}
+/* removing outline ring on focus  */
+.select2-container--default:focus,
+.select2-container--default:focus,
+.select2 .selection .select2-selection--single:focus,
+.select2-container--default .select2-search--dropdown .select2-search__field:focus  {
+    outline: none;
+}
+/* removing border on initial state  */
+.select2 .selection .select2-selection--single,
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border-width: 0 0 1px 0 !important;
+    border-radius: 0 !important;
+    height: 2.05rem;
+}
+/* removing border on initial state of multiselect dropdown */
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-width: 0 0 1px 0 !important;
+    border-radius: 0 !important;
+}
+/* removing border on of dropdown state */
+.select2-results__option {
+    color: #2E58AD;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-size:0.95rem;
+}
+/* on hover color change of dropdown item  */
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #eee !important;
+    color: #2E58AD !important;
+}
+/* adding dropshadow for dropdown state  */
+.select2-dropdown {
+    border: none !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+/* colors of selected item  */
+.select2-container--default .select2-results__option[role=group] .select2-results__group {
+    background-color: #333333;
+    color: #fff;
+}
+/* left padding made to zero  */
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 0 !important;
+}
+/*always set the text alignment to left */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    text-align: left;
+    font-size: 1rem;
+}
+/*to increase size of dropdown*/
+.select2-container--default .select2-results>.select2-results__options {
+    max-height: 400px;
+    overflow-y: auto;
+}
+/* dropdown pushed to index 1 */
+.select2-dropdown {
+    z-index:1;
+}
+.select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0 !important;
+}
+
+.select2-container .select2-search--inline .select2-search__field:focus {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.select2-container .select2-selection--multiple {
+    min-height: 2.05rem !important;
+}
+
+.select2-container--default.select2-container--disabled .select2-selection--single {
+    background-color: #ddd !important;
+    color: rgba(0,0,0,0.25);
+    border-bottom: 1px dotted rgba(0,0,0,0.25);
+}

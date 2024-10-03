@@ -1,0 +1,128 @@
+/* index of this stylesheet
+  ->  module related styling
+  ->  iframe related styling
+  ->  utilities styling
+  ->  responsiveness styling
+ */
+
+/* module related styling  */
+
+.module-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: .5rem;
+  background-color: #f2f2f2;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 10px;
+  overflow: auto;
+}
+
+.module-holder .module {
+  width: auto;
+  padding: 12px;
+  margin: 7px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 10px 10px 0 0;
+  color: #fff;
+}
+
+.default.module {
+  background-color: #2E58AD;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2E58AD), to(#6288d5));
+  background-image: linear-gradient(to right, #2E58AD, #6288d5);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-shadow: 0 0 8px #92ace2, 0 0 4px #7e9ddd, 0 0 2px #6a8ed7;
+  box-shadow: 0 0 8px #92ace2, 0 0 4px #7e9ddd, 0 0 2px #6a8ed7;
+}
+
+.module.active {
+  background-color: #f56661;
+  background-image: linear-gradient(to right, #f56661, rgb(245 150 145));
+  box-shadow: 0 0 8px rgb(245 102 97 / 60%), 0 0 4px rgb(245 102 97 / 80%), 0 0 2px rgb(245 102 97);
+}
+
+/* iframe related styling  */
+
+iframe {
+  box-sizing: border-box;
+  /* make the border size be included in the height */
+  display: block;
+  /* make them block to fix white space margin */
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+}
+
+/* utilities styling */
+
+body {
+  background-color: #f2f2f2;
+}
+
+.row.no-mar {
+  margin-bottom: 0;
+  box-shadow: 1px 1px 10px 1px #777;
+}
+
+.hidden {
+  display: none;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.top-2rem {
+  top: 2rem;
+}
+
+.theme-change {
+  position: fixed;
+  z-index: 2;
+  right: -20px;
+  top: 60px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 1s ease-in-out;
+}
+
+/* responsiveness styling  */
+
+@media (max-width: 996px) {
+  .module-holder {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .module-holder {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .module-holder {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+}

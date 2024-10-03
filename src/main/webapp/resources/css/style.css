@@ -1,0 +1,312 @@
+/* downloading the open sans font from google fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* body and its background styling */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: black url("../images/login-background.jpg") no-repeat center center;
+  background-size: cover;
+  /* overflow: hidden; */
+  height: 100%;
+  max-height: 100vh;
+}
+/* overlay for page  */
+.homepage {
+  margin-top: -22px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+/* header & its text styling starts*/
+.title {
+  background-color: black;
+  text-align: center;
+}
+
+.title--text {
+  color: #eee;
+  padding: 10px;
+}
+/* header & its text styling ends*/
+/* login card styling starts */
+.login-top {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 150px;
+  margin-bottom: 140px;
+}
+
+.login {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: auto;
+  padding: 80px 60px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 30px;
+  color: #eee;
+}
+
+.login--img {
+  position: absolute;
+  width: 13%;
+  top: 120px;
+  left: 212px;
+}
+
+.login--text {
+  margin-left: 80px;
+  margin-top: 5px;
+}
+
+.login--text a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.login .form-control, .login--button {
+  display: block;
+  height: 34px;
+  width: 230px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: transparent;
+  color: #eee;
+  border: 0;
+  margin-top: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.login--button {
+  border: 1px solid #eee;
+  padding: 6px 20px;
+  width: 144px;
+  margin: auto;
+  margin-left: 50px;
+  margin-top: 35px;
+}
+/* login card styling ends */
+
+/* footer styling starts  */
+.bottom {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.bottom p {
+  color: #eee;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.bottom--logo {
+  width: 6%;
+  margin-bottom: -8px;
+  padding: 5px;
+}
+/* footer styling ends  */
+
+@media only screen and (max-width: 820px) {
+  .login-top {
+    margin: 50px;
+    margin-bottom: 240px;
+  }
+}
+/* navigation styling starts */
+nav{background-color: rgba(0,0,0,0.85);}
+.nav-wrapper.bg{
+    text-align: center;
+    padding: 15px 5px 5px;
+}
+.nav-wrapper.bg .text{
+    font-size: 2rem;
+}
+.tite{
+    color:#eee;
+    margin-left: 8.3333333%;
+    padding-left: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.mar-top{
+    margin-top:15%;
+}
+.mar-l{margin-left:-10%}
+.mar-r{margin-right:-10%}
+.card-img{
+    max-width: 70%;
+    margin-left: 15%;
+    margin-top:-32%;
+}
+/* navigation styling ends */
+/* outline button styling starts  */
+.btn-outline{
+    text-decoration: none;
+    color: #eee;
+    background-color: transparent;
+    border:1px solid #eee;
+    padding: 8px 30%;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+.btn-outline input,
+.for-text,
+.for-text a{
+    color:#eee ;
+    text-align: center;
+}
+/* outline button styling ends  */
+
+input[type=text]:not(.browser-default).validate+label,
+input[type=password]:not(.browser-default).validate+label,
+input[type=text]:not(.browser-default).validate+label::after,
+input[type=password]:not(.browser-default).validate+label::after        {
+    color:#ddd !important;
+}
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]){
+
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 1px 0 0 #eee;
+}
+.input-field input {
+    color:#eee;
+}
+/* footer styling starts  */
+.page-footer{
+    background-color: rgba(0,0,0,0.85);
+    padding-top: 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin:0;
+}
+.footer-text{
+    color:#eee;
+    text-align: center;
+    padding: 5px 10px 10px;
+    font-size: .75rem;
+    margin:0;
+}
+.footer-logo{
+    width: 9%;
+    margin-bottom: -8px;
+    padding: 5px;
+}
+.text-center{
+    text-align: center;
+}
+@media only screen and (max-width:1024px){
+  body{
+    background-size: auto;
+  }
+    .mar-top {
+      margin-top: 45%;
+      margin-bottom:25%;
+  }
+}
+@media only screen and (max-width:820px){
+  .nav-wrapper.bg .text{
+    font-size: 1.5rem;
+  }
+  .mar-top {
+    margin-top: 35%;
+    margin-bottom:25%;
+  }
+  .footer-logo{
+    width: 15%;
+  }
+}
+/* footer styling ends  */
+/* login card messages styling starts  */
+.error{color:#ff4040;}
+	    .success{color:#0ee50e;}
+	    .file-field{z-index:1;}
+	    .homepage{background-color: rgba(2, 36, 202, 0.69);}
+	    .card {     background-color: white;}
+		.input-field.col label{
+		color:#eee;
+		}
+		.msg{
+		 /* padding-left: .75rem;
+    	 	  margin-left: 8.333333%;*/
+    		  text-align: center;
+		}
+		.btn{
+		border: 1px solid #eee;
+		}
+		.bgb,.bgb:hover,.sidenav li > a.btn:hover{
+		  background-color:rgb(2, 36, 202);
+    }
+		.bgb{
+      border:none;
+    }
+		.card-template{
+      position:absolute;
+      top:25%;
+    }
+    /* login card messages styling ends  */
+/* side navigation bar and setting icon styling starts  */
+		.sidenav li span,.sidenav li p{padding:0 32px;}
+		.setting-icon{
+			display: inline-block;
+    		position: absolute;
+    		left: 10px;
+    		top:15px;
+    		color:#fff;
+		}
+
+ [type="radio"].with-gap:checked + span::before, [type="radio"].with-gap:checked + span::after {
+    border-color: rgb(2, 36, 202);
+    background-color: rgb(2, 36, 202) ;
+}
+/* side navigation bar and setting icon styling ends  */
+/* styling for autofill color change removing	starts */
+		input:-internal-autofill-selected {
+		background-color:transparent !important;	}
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus,
+		input:-webkit-autofill:active {
+			animation: input_background_autofill 0s forwards;
+			-webkit-text-fill-color: #fff !important;
+		}
+		@keyframes input_background_autofill {
+		    100% { background-color: transparent }
+		}
+/* styling for autofill color change removing	ends */
+
+ .modal{width:35%;}
+ @media only screen and (max-width: 576px){
+  .modal{
+    width: 75%;
+  }
+  body{background-size: cover;}
+  .mar-top{margin-top:42%;margin-left: 0; margin-right:0;}
+  .footer-logo{
+    width: 35%;
+  }
+}
+/* button & its hover state styling starts */
+	   .bgg{
+        background-color:#777;
+        width: 36%;
+        border-radius: 45px;
+        box-shadow: none;
+        border:none
+	   }
+	   .bgg:hover{
+	      box-shadow:none;
+	      background-color:#777;
+      }
+	   .file-field input{
+        color:#333;
+    }
+     /* button & its hover state styling ends  */
+
+/*# sourceMappingURL=style.css.map */

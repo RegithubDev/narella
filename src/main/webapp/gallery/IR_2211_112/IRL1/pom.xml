@@ -1,0 +1,253 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.resustainability.reisp</groupId>
+  <artifactId>reisp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>reisp</name>
+  <url>http://maven.apache.org</url>
+  
+    <properties>
+	  <!-- <spring.version>4.2.0.RELEASE</spring.version> -->
+	  <spring.version>4.2.0.RELEASE</spring.version>
+	  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+   <dependencies>  
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>    
+    <dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	    <version>3.0.1</version>
+	</dependency>
+    <dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	 <dependency>
+        <groupId>com.microsoft.sqlserver</groupId>
+        <artifactId>mssql-jdbc</artifactId>
+        <version>7.0.0.jre8</version>
+        <scope>runtime</scope>
+    </dependency>
+<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>6.1.0.jre7</version>
+</dependency>  
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	   <groupId>org.codehaus.jackson</groupId>
+	   <artifactId>jackson-mapper-asl</artifactId>
+	   <version>1.9.10</version>
+	</dependency>
+	<dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-core</artifactId>
+        <version>2.11.2</version>
+    </dependency>
+	<dependency>
+         <groupId>com.fasterxml.jackson.core</groupId>
+         <artifactId>jackson-databind</artifactId>
+         <version>2.11.2</version>
+    </dependency>
+    <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+		<scope>runtime</scope>
+	</dependency>
+    <dependency>
+	  <groupId>mysql</groupId>
+	  <artifactId>mysql-connector-java</artifactId>
+	  <version>8.0.20</version>
+	</dependency>
+	
+	<dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.14</version>
+    </dependency>
+
+    
+  	<!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-s3 -->
+	<dependency>
+	    <groupId>com.amazonaws</groupId>
+	    <artifactId>aws-java-sdk-s3</artifactId>
+	    <version>1.11.375</version>
+	</dependency>
+	
+	<dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.7</version>
+    </dependency>	
+	
+	<dependency>
+	   <groupId>commons-fileupload</groupId>
+	   <artifactId>commons-fileupload</artifactId>
+	   <version>1.3.1</version> 
+	</dependency>
+	<dependency>
+		<groupId>commons-io</groupId>
+		<artifactId>commons-io</artifactId>
+		<version>2.4</version>
+	</dependency>
+	<dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>4.1.2</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>4.1.2</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml-schemas</artifactId>
+        <version>4.1.2</version>
+    </dependency>
+    
+    
+    <dependency>
+		<groupId>net.htmlparser.jericho</groupId>
+		<artifactId>jericho-html</artifactId>
+		<version>3.4</version>
+	</dependency>
+	<dependency>
+	    <groupId>net.sourceforge.nekohtml</groupId>
+	    <artifactId>nekohtml</artifactId>
+	    <version>1.9.22</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.docx4j</groupId>
+	    <artifactId>docx4j</artifactId>
+	    <version>6.1.2</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.docx4j</groupId>
+	    <artifactId>docx4j-ImportXHTML</artifactId>
+	    <version>8.0.0</version>
+	</dependency>
+	<dependency>
+	  <groupId>javax.xml.bind</groupId>
+	  <artifactId>jaxb-api</artifactId>
+	  <version>2.3.0</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.sun.xml.bind</groupId>
+	  <artifactId>jaxb-core</artifactId>
+	  <version>2.3.0</version>
+	</dependency>
+	<dependency>
+	  <groupId>com.sun.xml.bind</groupId>
+	  <artifactId>jaxb-impl</artifactId>
+	  <version>2.3.0</version>
+	</dependency>
+	
+<dependency>
+		<groupId>com.sun.mail</groupId>
+		<artifactId>javax.mail</artifactId>
+		<version>1.6.2</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.velocity</groupId>
+	    <artifactId>velocity</artifactId>
+	    <version>1.7</version>
+	</dependency>
+	<dependency>
+	    <groupId>org.apache.velocity</groupId>
+	    <artifactId>velocity-tools</artifactId>
+	    <version>2.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context-support</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto -->
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-crypto</artifactId>
+	    <version>${spring.version}</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>com.google.code.gson</groupId>
+	    <artifactId>gson</artifactId>
+	    <version>2.8.4</version>
+	</dependency>
+	  <dependency>
+        <groupId>org.springframework.security.extensions</groupId>
+        <artifactId>spring-security-saml2-core</artifactId>
+        <version>1.0.0.RC2</version>
+    </dependency>
+     <dependency>
+      <groupId>com.onelogin</groupId>
+      <artifactId>java-saml</artifactId>
+      <version>2.9.0</version>
+  </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+        <id>spring-milestones</id>
+        <name>Spring Milestones</name>
+        <url>http://repo.spring.io/milestone</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+</repositories>
+  <build>
+   <finalName>reisp</finalName>
+     <plugins>
+        <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>18</release>
+          	<warName>reisp</warName>
+                <!-- <outputDirectory>D:\jboss-as-7.1.1.Final\standalone\deployments</outputDirectory> -->
+                <outputDirectory>E:\Development\apache-tomcat-9.0.43\webapps</outputDirectory>
+        </configuration>
+      </plugin>
+        <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+        <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-resources-plugin</artifactId>
+	        <version>3.1.0</version>
+	        <configuration>
+	          <encoding>UTF-8</encoding>
+	        </configuration>
+	    </plugin>
+    </plugins>
+  </build>
+</project>

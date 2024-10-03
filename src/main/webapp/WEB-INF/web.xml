@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://JAVA.sun.com/xml/ns/javaee"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HIMSW</display-name>
+    <!-- Spring configuration start -->
+  <servlet>
+		<servlet-name>HIMSW</servlet-name>
+		<servlet-class>
+			org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HIMSW</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<filter>  
+	    <filter-name>encodingFilter</filter-name>  
+	    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>  
+	    <init-param>  
+	       <param-name>encoding</param-name>  
+	       <param-value>UTF-8</param-value>  
+	    </init-param>  
+	    <init-param>  
+	       <param-name>forceEncoding</param-name>  
+	       <param-value>true</param-value>  
+	    </init-param>  
+	</filter>  
+	<filter-mapping>  
+	    <filter-name>encodingFilter</filter-name>  
+	    <url-pattern>/*</url-pattern>  
+	</filter-mapping>
+	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/HIMSW-servlet.xml</param-value>
+	</context-param>
+	
+	<session-config>
+		<!-- Expired time is 4 hrs-->
+        <!-- <session-timeout>240</session-timeout> -->
+        <!-- Expired time is 300 mins-->
+        <session-timeout>300</session-timeout>
+    </session-config>
+	
+	<welcome-file-list>  
+	   <welcome-file>/</welcome-file>  
+	</welcome-file-list>
+	
+	
+	<error-page>
+	  <error-code>404</error-code>
+	  <location>/views/error/404.jsp</location>
+	</error-page>
+	<error-page>
+	  <error-code>500</error-code>
+	  <location>/views/error/500.jsp</location>
+	</error-page>
+	<error-page>
+	  <error-code>501</error-code>
+	  <location>/views/error/501.jsp</location>
+	</error-page>
+	<error-page>
+	  <error-code>313</error-code>
+	  <location>/views/error/313.jsp</location>
+	</error-page>
+	<error-page>
+	  <error-code>400</error-code>
+	  <location>/views/error/400.jsp</location>
+	</error-page>
+	
+</web-app>

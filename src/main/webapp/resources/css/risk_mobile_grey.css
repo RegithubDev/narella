@@ -1,0 +1,100 @@
+.b-w {
+    background-color: #ddd !important;
+    z-index: 1;
+}
+
+.card {
+    border: 0.3px solid #999999cc;
+}
+
+/* file upload styling starts */
+.file-field .btn {
+    float: none;
+    display: block;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+}
+
+.file-field .file-path-wrapper {
+    height: 35px;
+}
+
+input[type=text]:not(.browser-default).file-path.validate {
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+/* file upload styling ends */
+.error {
+    color: red;
+    padding-left: inherit;
+}
+
+/* datepicker and textarea styling starts */
+.datepicker+button {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    border: 0;
+    opacity: 0.7;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.input-field input[type='text']:not(.file-path),
+.input-field textarea {
+    background-color: #ddd;
+    padding: 0 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+}
+
+.btn {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+}
+
+.input-field textarea+label {
+    background-color: transparent;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.s6.input-field,
+.s12.input-field {
+    padding: 0 5px;
+}
+
+/* datepicker and text area  styling ends */
+
+/* date picker style override to  default style */
+.datepicker-calendar .select-wrapper,
+.datepicker-calendar input[type='text'] {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border-radius: none;
+}
+
+/* dropdown inner item style  */
+.dropdown-content li>span {
+    color: #2E58AD;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* margin of input items */
+.input-field {
+    margin-top: 0.40rem;
+    margin-bottom: 0.40rem;
+}
+
+
+/* card padding  */
+.card .card-content {
+    padding: 24px 1px;
+    background-color: #ececec;
+}
+
+.headbg {
+    margin: -25px -1px 20px;
+}
