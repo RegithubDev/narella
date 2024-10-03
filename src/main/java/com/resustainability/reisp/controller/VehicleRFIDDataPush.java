@@ -3,6 +3,8 @@ package com.resustainability.reisp.controller;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Base64;
@@ -117,7 +119,7 @@ public class VehicleRFIDDataPush {
                     latestRecordRs.close();
 
                     // Build the main query based on the latest record
-                    String query = "SELECT top(1) [TagId] as vehiclefidNo, [Lat] as latitude, [Lng] as longitude, " +
+                    String query = "SELECT [TagId] as vehiclefidNo, [Lat] as latitude, [Lng] as longitude, " +
                             "[TDate] as dateOfInspection, [damaged], [gps], [vehicleCondition], " +
                             "[lastServiceDate], [creationMode] FROM [dbDelhiRamkySWM].[dbo].[UhfTransaction] " +
                             "WHERE TagId is not null ";
@@ -140,11 +142,26 @@ public class VehicleRFIDDataPush {
                         obj1.put("vehiclefidNo", rs.getString("vehiclefidNo"));
                         obj1.put("latitude", rs.getString("latitude"));
                         obj1.put("longitude", rs.getString("longitude"));
-                        obj1.put("dateOfInspection", rs.getTimestamp("dateOfInspection").toInstant());
+                        ZonedDateTime zonedDateTime = rs.getTimestamp("dateOfInspection")
+                                .toLocalDateTime()
+                                .atZone(ZoneId.of("Asia/Kolkata"));
+
+                        String formattedDate = zonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"));
+                       
+                        
+                        obj1.put("dateOfInspection", formattedDate);
                         obj1.put("damaged", rs.getString("damaged"));
                         obj1.put("gps", rs.getString("gps"));
                         obj1.put("vehicleCondition", rs.getString("vehicleCondition"));
-                        obj1.put("lastServiceDate",rs.getTimestamp("lastServiceDate") != null ? rs.getTimestamp("lastServiceDate").toInstant() : null);
+                        
+                        ZonedDateTime zonedDateTime2 = rs.getTimestamp("lastServiceDate")
+                                .toLocalDateTime()
+                                .atZone(ZoneId.of("Asia/Kolkata"));
+
+                        String formattedDate2 = zonedDateTime2.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSXXX"));
+                       
+                        
+                        obj1.put("lastServiceDate",formattedDate2);
                         obj1.put("creationMode", rs.getString("creationMode"));
 
                         jsonArray.put(obj1);
@@ -165,6 +182,7 @@ public class VehicleRFIDDataPush {
 
                     // Push the data to the API
                     output = pushDataToAPI(jsonArray.toString());
+                    System.out.println(jsonArray.toString());
                     logger.error("NAREELA VEHICLE DATA API :"+ output);	
 					 //  EMailSender emailSender = new EMailSender();
 	    			   // emailSender.send("saidileep.p@resustainability.com", "Narella - Vehicle Data","arun.kumar@resustainability.com", jsonArray.toString(), null, output);
